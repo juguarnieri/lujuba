@@ -4,7 +4,7 @@ import { useNavigation } from '@react-navigation/native';
 
 import CardImageLuiza from "../components/CardImageLuiza";
 
-export default function LuizaHome() {
+export default function HomeScreen2() {
     const navigation = useNavigation();
     return (
     <View style={{ padding: 20 }}>
