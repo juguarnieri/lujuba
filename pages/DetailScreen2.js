@@ -6,9 +6,9 @@ export default function LuizaDetail() {
   return (
     <View style={styles.container}>
       <Card
-    Title="Luiza Schettini"
-    Image={require("../assets/duplinha.png")}
-    description="Olá meu nome é Luiza Schettini, sou aluna do Senai e do Sesi Valinhos, atualmente cursando o ensino médio e o curso de desenvolvimento de sistema, tenho 17 anos, moro em valinhos, e minha matéria preferida é história"
+    Title="Sobre Nossos Produtos"
+    Image={require("../assets/logo.png")}
+    description="Na nossa loja, cada produto foi escolhido com um objetivo claro: cuidar do seu dachshund com responsabilidade, carinho e atenção às particularidades da raça. Sabemos que cães salsichas não são como qualquer outro cão — eles têm um corpo único, uma personalidade marcante e necessidades muito específicas. Por isso, nossa curadoria vai muito além da aparência ou da moda pet. Aqui, cada item tem um propósito real na vida do seu companheiro de quatro patas."
       />
     </View>
   );
