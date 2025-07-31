@@ -57,32 +57,32 @@ export default function HomeScreen() {
 
          <CardImageTopJulia
             title="Ariel"
-            image={require("../assets/ariel.png")}
+            image={require("../assets/dash1.png")}
             description="Descrição do Card 1."
           />
           <CardImageTopJulia
             title="Branca de Neve"
-            image={require("../assets/brancaNeve.png")}
+            image={require("../assets/dash2.png")}
             description="Descrição do Card 2."
           />
           <CardImageTopJulia
             title="Cinderela"
-            image={require("../assets/cinderela.png")}
+            image={require("../assets/dash3.png")}
             description="Descrição do Card 3."
           />
           <CardImageTopJulia
             title="Pocahontas"
-            image={require("../assets/pocahontas.png")}
+            image={require("../assets/dash4.png")}
             description="Descrição do Card 4."
           />
           <CardImageTopJulia
             title="Frozen"
-            image={require("../assets/frozen.png")}
+            image={require("../assets/dash5.png")}
             description="Descrição do Card 5."
           />
           <CardImageTopJulia
             title="Bela"
-            image={require("../assets/bela.png")}
+            image={require("../assets/dash6.png")}
             description="Descrição do Card 6."
           />
 
