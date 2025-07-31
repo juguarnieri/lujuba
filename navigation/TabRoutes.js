@@ -1,8 +1,8 @@
 import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import HomeScreen from '../pages/HomeScreen';
-import ProfileScreen from '../pages/ProfileScreen';
-import { Ionicons } from '@expo/vector-icons';
+import HomeScreen from '../pages/HomeScreen'; 
+import HomeScreen2 from '../pages/HomeScreen2';
+import { Ionicons } from '@expo/vector-icons'; 
 
 const Tab = createBottomTabNavigator();
 
@@ -13,22 +13,20 @@ export default function TabRoutes() {
         tabBarIcon: ({ color, size }) => {
           let iconName;
 
-          if (route.name === 'Home') {
-            iconName = 'home-outline';
-          } else if (route.name === 'Perfil') {
-            iconName = 'person-outline';
-          }
-
+          if (route.name === 'Julia') {
+            iconName = 'person-circle-outline';
+          } else if (route.name === 'Luiza') {
+            iconName = 'person-circle-outline';
+          } 
           return <Ionicons name={iconName} size={size} color={color} />;
         },
-        tabBarActiveTintColor: 'blue',
-        tabBarInactiveTintColor: 'gray',
-        headerTitleAlign: 'center',
-        headerShown: false, 
+        tabBarActiveTintColor: 'pink',
+        tabBarInactiveTintColor: 'gray', 
+        headerTitleAlign: 'center', 
       })}
     >
-      <Tab.Screen name="Home" component={HomeScreen} />
-      <Tab.Screen name="Perfil" component={ProfileScreen} />
+      <Tab.Screen name="Julia" component={HomeScreen} />
+      <Tab.Screen name="Luiza" component={HomeScreen2} />
     </Tab.Navigator>
   );
 }
