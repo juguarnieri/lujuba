@@ -1,53 +1,40 @@
 import React from 'react';
-import { View, Image, Text, StyleSheet } from 'react-native';
+import { View, Text, Image, StyleSheet } from 'react-native';
 
-export default function CardImageTopJulia({ title, image, description }) {
+export default function CardDetails({ Title, Image: CardImage, description }) {
   return (
     <View style={styles.card}>
-      <Image source={image} style={styles.image} />
-      <View style={styles.textContainer}>
-      <Text style={styles.text}>{title}</Text>
-      <Text style={styles.cardDesc}>{description}</Text>
-    </View>
+      <Image source={CardImage} style={styles.image} />
+      <Text style={styles.title}>{Title}</Text>
+      <Text style={styles.description}>{description}</Text>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   card: {
-    width: '100%',
-    borderRadius: 12,
-    backgroundColor: 'black',
-    overflow: 'hidden',
-    alignItems: "center",
-    justifyContent: "center",
+    alignItems: 'center',
+    padding: 20,
+    backgroundColor: 'pink',
+    borderRadius: 10,
+    shadowColor: '#000',
+    shadowOpacity: 0.1,
+    shadowRadius: 10,
+    elevation: 5,
   },
   image: {
-    width: '100%',
-    height: 320,
-    resizeMode: 'cover',
+    width: 150,
+    height: 150,
+    borderRadius: 75,
+    marginBottom: 10,
   },
-  textContainer: {
-    padding: 16,
-    alignItems: 'center',
-    color: 'white',
+  title: {
+    fontSize: 18,
     fontWeight: 'bold',
-
+    marginBottom: 5,
   },
-  text:{
-      color: 'white',
-    fontSize: 20, 
-    marginBottom:8,
-    textAlign: 'center',
-    fontWeight: 'bold',
-
-  },
-  cardDesc: {
+  description: {
     fontSize: 14,
-    color: "white",
-    width: 300,
-    marginBotton: 12,
-    textAlign: "justify"
+    textAlign: 'center',
   },
-  
 });

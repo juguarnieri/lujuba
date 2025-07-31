@@ -28,11 +28,11 @@ export default function HomeScreen() {
           />
           <View style={styles.circleImages}>
             <Image
-              source={require("../assets/dash2.png")}
+              source={require("../assets/dash15.png")}
               style={styles.circleImage}
             />
             <Image
-              source={require("../assets/dash2.png")}
+              source={require("../assets/dash11.png")}
               style={styles.circleImage}
             />
           </View>
@@ -44,48 +44,49 @@ export default function HomeScreen() {
         >
           <FlatList
             data={[
-              { id: 9, image: require("../assets/dash2.png") },
-              { id: 10, image: require("../assets/dash2.png") },
+              { id: 9, image: require("../assets/dash11.png") },
+              { id: 10, image: require("../assets/dash12.png") },
+              { id: 11, image: require("../assets/dash13.png") },
+              { id: 12, image: require("../assets/dash14.png") }
             ]}
             renderItem={({ item }) => <CardSquareJulia image={item.image} />}
             keyExtractor={(item) => item.id.toString()}
             numColumns={2}
-            scrollEnabled={false} 
+            scrollEnabled={false}
             columnWrapperStyle={{ justifyContent: "space-between" }}
             contentContainerStyle={{ gap: 16, marginBottom: 20 }}
           />
 
-         <CardImageTopJulia
-            title="Ariel"
+          <CardImageTopJulia
+            title="Porta Vinho"
             image={require("../assets/dash1.png")}
-            description="Descrição do Card 1."
+            description="Um elegante porta-vinho para sua casa."
+            price="R$ 50,00"
           />
           <CardImageTopJulia
-            title="Branca de Neve"
-            image={require("../assets/dash2.png")}
-            description="Descrição do Card 2."
-          />
-          <CardImageTopJulia
-            title="Cinderela"
+            title="Torradeira de Salsichas"
             image={require("../assets/dash3.png")}
-            description="Descrição do Card 3."
+            description="Prepare salsichas de forma prática e rápida."
+            price="R$ 70,00"
           />
           <CardImageTopJulia
-            title="Pocahontas"
+            title="Lençol de Cama"
             image={require("../assets/dash4.png")}
-            description="Descrição do Card 4."
+            description="Lençol macio e confortável para sua cama."
+            price="R$ 80,00"
           />
           <CardImageTopJulia
-            title="Frozen"
+            title="Tênis"
             image={require("../assets/dash5.png")}
-            description="Descrição do Card 5."
+            description="Tênis estiloso e confortável para o dia a dia."
+            price="R$ 90,00"
           />
           <CardImageTopJulia
-            title="Bela"
+            title="Blusa"
             image={require("../assets/dash6.png")}
-            description="Descrição do Card 6."
+            description="Blusa moderna e ideal para qualquer ocasião."
+            price="R$ 100,00"
           />
-
         </ScrollView>
       </View>
     </SafeAreaView>
@@ -132,4 +133,3 @@ const styles = StyleSheet.create({
     gap: 20,
   },
 });
-
