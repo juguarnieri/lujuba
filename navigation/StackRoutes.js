@@ -29,7 +29,7 @@ export default function StackRoutes() {
       <Stack.Screen
         name="DetailScreen"
         component={DetailScreen}
-        options={{ title: 'Detalhes da Julia' }}
+        options={{ title: 'Detalhes da Babi' }}
       />
       <Stack.Screen
         name="DetailScreen2"

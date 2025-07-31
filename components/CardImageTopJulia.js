@@ -1,15 +1,15 @@
-
 import React from 'react';
 import { View, Image, Text, StyleSheet } from 'react-native';
 
-export default function CardImageTopJulia({ title, image, description }) {
+export default function CardImageTopJulia({ title, image, description, price }) {
   return (
     <View style={styles.card}>
       <Image source={image} style={styles.image} />
       <View style={styles.textContainer}>
-      <Text style={styles.text}>{title}</Text>
-      <Text style={styles.cardDesc}>{description}</Text>
-    </View>
+        <Text style={styles.text}>{title}</Text>
+        <Text style={styles.cardDesc}>{description}</Text>
+        <Text style={styles.price}>{price}</Text>
+      </View>
     </View>
   );
 }
@@ -21,26 +21,31 @@ const styles = StyleSheet.create({
     backgroundColor: '#f5f5f5',
     overflow: 'hidden',
     marginBottom: 16,
+    alignSelf: 'center', 
   },
   image: {
     width: '100%',
-    height: 120,
+    height: 200,
     resizeMode: 'cover',
   },
   textContainer: {
-    color: 'green',
-    fontSize: 14,
     margin: 15,
     marginBottom: 6,
   },
   text: {
-    color: "green",
+    color: "pink",
     fontWeight: 'bold',
+    fontSize: 16,
   },
   cardDesc: {
     fontSize: 14,
     lineHeight: 20,
     color: "black",
   },
-  
+  price: {
+    fontSize: 16,
+    fontWeight: 'bold',
+    color: "#333",
+    marginTop: 8,
+  },
 });
