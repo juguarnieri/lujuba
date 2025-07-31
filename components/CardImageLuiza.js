@@ -13,17 +13,26 @@ export default function CardImageLuiza ({ image }) {
 
 const styles = StyleSheet.create({
     card: {
-        width: 140,
+        width: 165,
         marginRight: 10,
         backgroundColor: '#ec6149',
         borderRadius: 10,
         overflow: 'hidden',
         paddingBottom: 8,
         borderWidth: 1,
-    },
-    image: {
+    },image: {
         width: '100%',
-        height: 100,
+        height: 120,
         resizeMode: 'cover',
-    }
+      },
+      textContainer: {
+        color: 'green',
+        fontSize: 14,
+        margin: 15,
+        marginBottom: 6,
+      },
+      text: {
+        color: "green",
+        fontWeight: 'bold',
+      },
   });
