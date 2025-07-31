@@ -12,29 +12,29 @@ export default function LuizaHome() {
         <View style={styles.sectionCard}>
           <View style={styles.header}>
             <Text style={styles.arrow}> ⇽ </Text>
-            <Image source={require('../assets/girspower.png')} style={styles.image} />
+            <Image source={require('../assets/duplinha.png')} style={styles.image} />
           </View>
 
         <ScrollView horizontal showsHorizontalScrollIndicator={false}>
           <CardImageLuiza 
-          image="https://i.pinimg.com/736x/de/73/5e/de735e2d90acab3e3dfe7702a118dcf5.jpg"
+          image="https://i.pinimg.com/736x/ae/5a/3b/ae5a3bd06c00684f13db25c23ae96ef2.jpg"
           />
           <CardImageLuiza 
-          image="https://i.pinimg.com/736x/a0/e7/1d/a0e71d27c7c28f1e83523e7d1e7dfb5d.jpg"
+          image="https://i.pinimg.com/736x/ae/5a/3b/ae5a3bd06c00684f13db25c23ae96ef2.jpg"
           />
           <CardImageLuiza 
-          image="https://i.pinimg.com/736x/f9/97/89/f997894c7435fbd99e734524d83ff670.jpg"
+          image="https://i.pinimg.com/736x/ae/5a/3b/ae5a3bd06c00684f13db25c23ae96ef2.jpg"
           />
           </ScrollView>
         </View>
 
         <View style={styles.container}>
           <Text style={styles.title}>
-            As Meninas SuperPoderosas
+        Curiosidades sobre os Salsichinhas
             {"\n\n"}
           </Text>
           <Text style={styles.text}>
-          Conta a história de três garotas com super poderes: Florzinha, Lindinha e Docinho. Elas foram criadas pelo Professor Utônio, que acidentalmente deixou derrubar o Elemento X na poção da "Garotinha Perfeita" (uma mistura de açúcar, tempero e tudo o que há de bom). Sendo assim, o Elemento X deu a elas super poderes.
+            Nossos produtos tem 100% de garantia
           </Text>
         </View>
 
