@@ -71,7 +71,7 @@ const styles = StyleSheet.create({
         justifyContent: "center",
         alignItems: "center",
         backgroundColor: "purplewhite",
-        padding: 5,
+        padding: 15,
     },
     header: {
       display: "flex",
