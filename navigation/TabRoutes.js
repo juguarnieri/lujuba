@@ -13,20 +13,20 @@ export default function TabRoutes() {
         tabBarIcon: ({ color, size }) => {
           let iconName;
 
-          if (route.name === 'Julia') {
-            iconName = 'person-circle-outline';
-          } else if (route.name === 'Luiza') {
-            iconName = 'person-circle-outline';
-          } 
+          if (route.name === 'Vendas') {
+            iconName = 'cart-outline'; 
+          } else if (route.name === 'Curiosidades') {
+            iconName = 'information-circle-outline'; 
+          }
           return <Ionicons name={iconName} size={size} color={color} />;
         },
         tabBarActiveTintColor: 'pink',
-        tabBarInactiveTintColor: 'gray', 
-        headerTitleAlign: 'center', 
+        tabBarInactiveTintColor: 'gray',
+        headerTitleAlign: 'center',
       })}
     >
-      <Tab.Screen name="Julia" component={HomeScreen} />
-      <Tab.Screen name="Luiza" component={HomeScreen2} />
+      <Tab.Screen name="Vendas" component={HomeScreen} />
+      <Tab.Screen name="Curiosidades" component={HomeScreen2} />
     </Tab.Navigator>
   );
 }
