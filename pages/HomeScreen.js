@@ -28,11 +28,11 @@ export default function HomeScreen() {
           />
           <View style={styles.circleImages}>
             <Image
-              source={require("../assets/perfil.png")}
+              source={require("../assets/dash2.png")}
               style={styles.circleImage}
             />
             <Image
-              source={require("../assets/perfil2.png")}
+              source={require("../assets/dash2.png")}
               style={styles.circleImage}
             />
           </View>
@@ -44,8 +44,8 @@ export default function HomeScreen() {
         >
           <FlatList
             data={[
-              { id: 9, image: require("../assets/princesaGeral.png") },
-              { id: 10, image: require("../assets/princesaGeral2.png") },
+              { id: 9, image: require("../assets/dash2.png") },
+              { id: 10, image: require("../assets/dash2.png") },
             ]}
             renderItem={({ item }) => <CardSquareJulia image={item.image} />}
             keyExtractor={(item) => item.id.toString()}
